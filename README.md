@@ -44,5 +44,5 @@ Be aware that in `docker-compose.yml` files we set `container_name` vars to ease
 - Both services should be in the same network so they can communicate to each other easily, via their container names & ports.
 - **phpfpm** service must be in the same network with **mysql** so you can make sql queries easily.
 - You should bind your project root directory to `/var/www/html` as volume. In this case, we set the volume like this `./html:/var/www/html` for **phpfpm** service and `./html:/usr/share/nginx/html` for **nginx** service.
-- For **php-fpm** service, we write a command to install **mysqli** extension. If you're not gonna use **mysqli** or use a different php extension, you can edit this line.
+- For **php-fpm** service, we wrote a command to install **mysqli** extension. If you're not gonna use **mysqli** or use a different php extension, you can edit this line.
 - We created a config file to use in nginx container and bind It as a volume `./default.conf:/etc/nginx/conf.d/default.conf`
