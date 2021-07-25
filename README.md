@@ -8,7 +8,7 @@ This is a ready-to-fire LEMP Stack development environment. All services created
 [PHP Official Image](https://hub.docker.com/_/php) - [Version of php-fpm used in this stack](https://hub.docker.com/layers/php/library/php/fpm/images/sha256-6d653e2ff0e2fdce1590afeb5f4b011f07919f8db120f8d82437edd4fe4fc3e3?context=explore)
 
 ## How to use
-First of all, you need to go trough [Docker Installation](https://docs.docker.com/get-docker/) but I suppose you already did that so you can follow steps below.
+First of all, you need to go through [Docker Installation](https://docs.docker.com/get-docker/) but I suppose you already did that so you can follow steps below.
 
 - To start up MySql and PhpMyAdmin services, navigate to `/db/` folder and type `docker-compose up -d`.
 - Now navigate to `/front/` folder and type the same command `docker-compose up -d`. It could take several seconds php-fpm service to startup.
@@ -45,4 +45,4 @@ Be aware that in `docker-compose.yml` files we set `container_name` vars to ease
 - **phpfpm** service must be in the same network with **mysql** so you can make sql queries easily.
 - You should bind your project root directory to `/var/www/html` as volume. In this case, we set the volume like this `./html:/var/www/html` for **phpfpm** service and `./html:/usr/share/nginx/html` for **nginx** service.
 - For **php-fpm** service, we wrote a command to install **mysqli** extension. If you're not gonna use **mysqli** or use a different php extension, you can edit this line.
-- We created a config file to use in nginx container and bind It as a volume `./default.conf:/etc/nginx/conf.d/default.conf`
+- We created a config file to use in nginx container and bind It as a volume `./default.conf:/etc/nginx/conf.d/default.conf`.
