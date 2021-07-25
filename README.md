@@ -2,9 +2,9 @@
 
 This is a ready-to-fire LEMP Stack development environment. All services created using official images, you can reach them via those links:
 
-[MySql](https://hub.docker.com/_/mysql)
-[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin)
-[Nginx](https://hub.docker.com/_/nginx)
+[MySql](https://hub.docker.com/_/mysql) - 
+[PhpMyAdmin](https://hub.docker.com/_/phpmyadmin) - 
+[Nginx](https://hub.docker.com/_/nginx) - 
 [PHP Official Image](https://hub.docker.com/_/php) - [Version of php-fpm used in this stack](https://hub.docker.com/layers/php/library/php/fpm/images/sha256-6d653e2ff0e2fdce1590afeb5f4b011f07919f8db120f8d82437edd4fe4fc3e3?context=explore)
 
 ## How to use
